@@ -48,5 +48,5 @@ return [
 	|
 	| Autoloader for middleware
 	*/
-	'middleware' => BP . DS . 'vendor' . DS . 'autoload.php',
+	// 'middleware' => BP . DS . 'vendor' . DS . 'autoload.php',
 ];
