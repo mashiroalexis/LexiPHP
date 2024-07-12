@@ -151,7 +151,7 @@ Class Handler {
 		$block = new Block;
 		# check if the error type valid
 		if(! isset($this->errorTypes[$type]) ) {
-			throw new Exception("Dispatch type is invalid", 1);
+			throw new \Exception("Dispatch type is invalid", 1);
 			return;
 		}
 		$type = $this->errorTypes[$type];
