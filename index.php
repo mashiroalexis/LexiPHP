@@ -19,7 +19,7 @@ if (version_compare(phpversion(), $req = '5.6.0', '<') === true) {
     exit;
 }
 
-// require_once "errors/error.php";
+require_once "errors/error.php";
 require_once "app/Core.php";
 
 /**

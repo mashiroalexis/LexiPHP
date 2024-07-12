@@ -88,7 +88,7 @@ Class System_Controller_Filesystem {
 	/** 
 	 *	Create A File
 	 */
-	public function create( $filename, $content = false, $path, $extension = "php" ) {
+	public function create( $filename, $content = false, $path = false, $extension = "php" ) {
 		if(! $this->isAccessable( $path ) ) {
 			return false;
 		}

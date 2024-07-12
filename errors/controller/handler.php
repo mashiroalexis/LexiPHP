@@ -68,7 +68,7 @@ Class Handler {
 		$this->blockPath = dirname(dirname(__FILE__)) . DIRECTORY_SEPARATOR . "view" . DIRECTORY_SEPARATOR;
 		set_error_handler([$this, 'errorHandler']);
 		set_exception_handler([$this, 'exceptionHandler']);
-
+		
 		# so sad :( deprecated in php 7.2 major release
 		// register_shutdown_function([$this, 'shutdownHandler']);
 	}
@@ -100,7 +100,7 @@ Class Handler {
 	 *	@param int $line
 	 *	@return void
 	 */	
-	public function errorHandler( $error_level, $error_message, $error_file, $error_line, $error_context ) {
+	public function errorHandler( $error_level = "", $error_message = "", $error_file = "", $error_line = "", $error_context = "" ) {
 		$block = new Block;
 		$block->setErrorType("error");
 		$block->setError([
