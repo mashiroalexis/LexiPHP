@@ -4,3 +4,4 @@ app/config/database.php
 .htaccess
 package/drive/files/
 vendor
+maintenance.flag
